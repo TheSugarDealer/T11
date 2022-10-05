@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">T11</string>
+    <string name="rb1">Carros</string>
+    <string name="rb2">Motos</string>
+    <string name="rb3">Suma</string>
+    <string name="rb4">Resta</string>
+    <string name="rb5">Multiplicacion</string>
+    <string name="rb6">Division</string>
+    <string name="caja_salida">Resultado</string>
+    <string name="caja">Nombre</string>
+    <string name="txt_1">Valor 1</string>
+    <string name="txt_2">Valor 2</string>
+
+
+    <string name="caja_encuesta">Te gusta</string>
+    <string name="enviar">enviar</string>
+    <string name="ask1">Cerveza</string>
+    <string name="ask2">Mezcal</string>
+    <string name="ask3">Pulque</string>
+    <string name="ask4">Tequila</string>
+
+    <string name="toogle">Ocultar</string>
+
+</resources>
