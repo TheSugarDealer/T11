@@ -19,6 +19,7 @@
     <string name="ask3">Pulque</string>
     <string name="ask4">Tequila</string>
 
-    <string name="toogle">Ocultar</string>
+    <string name="toogle_off">Ocultar</string>
+    <string name="toogle_on">Ver</string>
 
 </resources>
