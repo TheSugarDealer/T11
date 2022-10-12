@@ -13,6 +13,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="28dp"
         android:hint="@string/caja_t12"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,4 +36,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/caja_12" />
+
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="230dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 </androidx.constraintlayout.widget.ConstraintLayout>

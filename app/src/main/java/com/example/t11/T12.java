@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,6 +16,7 @@ public class T12 extends AppCompatActivity {
 
     private TextView tv1;
     private Spinner spinner;
+    private ListView lv1;
 
 
     @Override
@@ -26,13 +28,17 @@ public class T12 extends AppCompatActivity {
         String dato = getIntent().getStringExtra("dato");
         tv1.setText(dato);
 
+
+        //--spinner--//
         spinner = (Spinner) findViewById(R.id.spinner);
         String[] opciones = {
-                "Primero",
-                "Segundo",
-                "Tercero",
-                "cuarto",
-                "quinto"
+                "Cerveza",
+                "Tequila",
+                "Mezcal",
+                "Pulque",
+                "Vodka",
+                "Ron",
+                "Whiskey"
         };
 
         //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,opciones);
@@ -50,7 +56,24 @@ public class T12 extends AppCompatActivity {
 
             }
         });
+
+
+        //--list view--//
+
+        lv1 = (ListView) findViewById(R.id.lv1);
+        ArrayAdapter<String> conectorlv1 = new ArrayAdapter<>(this, R.layout.first_list_item,opciones);
+        lv1.setAdapter((conectorlv1));
+        lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                tv1.setText("Lista: "+spinner.getSelectedItem().toString());
+
+            }
+        });
     }
+
+
 
     public void Regresar(View view){
 
