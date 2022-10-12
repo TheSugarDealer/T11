@@ -21,5 +21,10 @@
 
     <string name="toogle_off">Ocultar</string>
     <string name="toogle_on">Ver</string>
+    
+    <string name="cambiar">Saltar</string>
+    <string name="caja_t12">Nombre</string>
+    <string name="regresar">Regresar</string>
+    
 
 </resources>

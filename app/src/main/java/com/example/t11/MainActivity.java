@@ -2,7 +2,9 @@ package com.example.t11;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         texto = (TextView) findViewById(R.id.caja_salida);
+        texto.setMovementMethod(new ScrollingMovementMethod());
         nombre = (TextView) findViewById(R.id.caja);
 
         edt1 = (EditText) findViewById(R.id.txt_1);
@@ -147,6 +150,14 @@ public class MainActivity extends AppCompatActivity {
 
         texto.setText(salidaTexto);
         salidaTexto = "";
+    }
+
+
+    public void SaltarActividad(View view){
+        Intent a = new Intent(this,T12.class);
+        a.putExtra("dato",nombre.getText().toString());
+        startActivity(a);
+
     }
 
 
